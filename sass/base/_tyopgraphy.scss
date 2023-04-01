@@ -1,0 +1,32 @@
+body {
+  color: $col-primary;
+}
+
+// Hero heading
+.hero__heading-container {
+  margin: 8rem 0 -3rem 0;
+  max-width: max-content;
+
+  .hero__heading {
+    width: max-content;
+  }
+
+  span {
+    font-weight: 400;
+    letter-spacing: -0.11em;
+    font-family: Castoro;
+    overflow: visible;
+  }
+
+  .hero__heading--span-1 {
+    display: block;
+  }
+
+  .hero__heading--span-3,
+  .hero__heading--span-4 {
+    display: block;
+    max-width: 100%;
+    background: yellow;
+    font-size: 5.25rem;
+  }
+}
