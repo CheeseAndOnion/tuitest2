@@ -4,29 +4,96 @@ body {
 
 // Hero heading
 .hero__heading-container {
-  margin: 8rem 0 -3rem 0;
+  margin: 7rem 0 -3rem 0;
   max-width: max-content;
 
   .hero__heading {
     width: max-content;
+
+    span {
+      font-weight: 400;
+      letter-spacing: -0.11em;
+      font-family: Castoro;
+      overflow: visible;
+      line-height: 5rem;
+    }
+
+    .hero__heading--span-1 {
+      display: block;
+    }
+
+    .hero__heading--span-3,
+    .hero__heading--span-4 {
+      display: block;
+      // background: pink;
+      font-size: 4.6rem;
+      margin-top: -0.8rem;
+    }
+
+    .hero__heading--span-4 {
+      margin-bottom: 4.5rem;
+    }
+  }
+}
+
+.about {
+  &__title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
   }
 
-  span {
-    font-weight: 400;
-    letter-spacing: -0.11em;
-    font-family: Castoro;
-    overflow: visible;
+  &__sub-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
   }
 
-  .hero__heading--span-1 {
-    display: block;
+  &__paragraph {
+    font-size: 1.125rem;
+  }
+}
+
+.experience p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 650px) {
+  .hero__heading-container {
+    .hero__heading {
+      .hero__heading--span-3,
+      .hero__heading--span-4 {
+        font-size: 5.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero__heading-container {
+    margin: 8.75rem 0 -3rem 0;
+    max-width: max-content;
   }
 
-  .hero__heading--span-3,
-  .hero__heading--span-4 {
-    display: block;
-    max-width: 100%;
-    background: yellow;
-    font-size: 5.25rem;
+  .about {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__sub-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+    }
+
+    &__paragraph {
+      font-size: 1.5rem;
+    }
+  }
+
+  .experience p {
+    font-size: 1.5rem;
+    font-style: normal;
   }
 }

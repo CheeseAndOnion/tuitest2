@@ -9,3 +9,18 @@
 @import 'layout/header';
 
 @import 'pages/home';
+@import 'pages/about';
+@import 'pages/projects';
+
+.hero__dropdown-links {
+  display: none;
+  list-style-type: none;
+}
+
+.hero__dropdown-links li a {
+  //   display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid $col-primary;
+}

@@ -1,0 +1,130 @@
+.about__title-underline {
+  height: 4px;
+  width: 100%;
+  background: #f8f6fe;
+  margin-bottom: 1rem;
+}
+
+.about-article {
+  margin-bottom: 2.5rem;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__years,
+  &__location,
+  &__country {
+    line-height: 0.75rem;
+  }
+}
+
+.UX-skills-article {
+  position: relative;
+}
+
+.UX-skills-article:before {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  height: 80%;
+  width: 30%;
+  background: linear-gradient(
+    269.59deg,
+    #f0eef6 0.31%,
+    rgba(240, 238, 246, 0) 99.62%
+  );
+  z-index: -15;
+}
+
+.UX-skills-article:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 120%;
+  width: 100%;
+  background: linear-gradient(
+    269.59deg,
+    #f0eef6 0.31%,
+    rgba(240, 238, 246, 0) 99.62%
+  );
+  z-index: -15;
+}
+
+.experience:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.about__paragraph {
+  margin-bottom: 1.5rem;
+  line-height: 45px;
+}
+
+.experience__bullet-point {
+  height: 1rem;
+  width: 1rem;
+  background: linear-gradient(180deg, #dfd8f3 0%, #f2f1f7 100%);
+  position: relative;
+}
+
+.experience__line {
+  height: 80px;
+  width: 2px;
+  background: rgba(223, 216, 243, 1);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 800px) {
+  .experience {
+    width: 75%;
+  }
+
+  .about {
+    &__paragraph--flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__paragraph--flex:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    #puffer-fish-paragraph {
+      width: 50%;
+      order: 2;
+    }
+    #puffer-fish-image {
+      width: 50%;
+      max-width: 350px;
+      order: 1;
+    }
+
+    #jigsaw-paragraph {
+      width: 50%;
+    }
+
+    #jigsaw-image {
+      width: 50%;
+      max-width: 350px;
+    }
+  }
+
+  .UX-skills-article:before {
+    height: 120%;
+    width: 140px;
+  }
+
+  .UX-skills-article:after {
+    right: 50%;
+    height: 120%;
+    width: 50%;
+  }
+}

@@ -1,0 +1,49 @@
+.case-study {
+  padding: 3rem 0;
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background: #f8f6fe;
+    border: 0.630272px solid rgba(0, 0, 0, 0.74);
+    border-radius: 2px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__link:not(:nth-child(2)) {
+    margin-bottom: 2rem;
+  }
+
+  &__img-and-exp {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .case-study {
+    padding: 5rem 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img-and-exp,
+    &__links-container {
+      width: 45%;
+      max-width: 400px;
+    }
+
+    &__img-and-exp {
+      margin-bottom: 0;
+    }
+  }
+}
