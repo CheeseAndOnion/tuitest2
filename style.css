@@ -161,7 +161,8 @@ body {
 
 @media screen and (min-width: 800px) {
   .hero__link {
-    display: inline; }
+    display: inline;
+    border: none; }
   .hero__link:not(:last-child) {
     margin-right: 3rem; }
   .hero__introduction {
@@ -173,7 +174,27 @@ body {
     right: 0%;
     height: 66%; }
   .hero__dropdown-link-hover-area {
-    position: relative; }
+    position: relative;
+    height: 5rem; }
+  .hero__link {
+    height: 1.5rem; }
+  .hero__link::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: -0.75rem;
+    height: 1px;
+    width: 6rem;
+    background: #53168f;
+    z-index: -10; }
+  .hero__link::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 7rem;
+    height: 1px;
+    width: 7.5rem;
+    background: #53168f; }
   .hero__dropdown-links {
     position: absolute;
     top: 2rem;

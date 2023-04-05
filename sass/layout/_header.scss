@@ -101,6 +101,7 @@
 
     &__link {
       display: inline;
+      border: none;
     }
 
     &__link:not(:last-child) {
@@ -121,6 +122,34 @@
 
     &__dropdown-link-hover-area {
       position: relative;
+      // background: red;
+      height: 5rem;
+    }
+
+    &__link {
+      // background: pink;
+      height: 1.5rem;
+    }
+
+    &__link::after {
+      content: '';
+      position: absolute;
+      top: 2rem;
+      left: -0.75rem;
+      height: 1px;
+      width: 6rem;
+      background: #53168f;
+      z-index: -10;
+    }
+
+    &__link::before {
+      content: '';
+      position: absolute;
+      top: 2rem;
+      left: 7rem;
+      height: 1px;
+      width: 7.5rem;
+      background: #53168f;
     }
 
     &__dropdown-links {
