@@ -1,31 +1,33 @@
 .hero {
   &__center {
     position: relative;
-    // background: yellow;
     width: 80%;
+    // max-width: 75%;
     margin: auto;
   }
 
   &__designer-img-container {
-    max-width: 1350px;
-    width: 100%;
-    height: 21rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -10;
+    height: 280px;
+    display: flex;
+    background: rgba(236, 233, 244, 1);
+  }
+
+  .image-left-box {
+    width: 20%;
+    height: 100%;
+    background: rgba(236, 233, 244, 1);
   }
 
   &__designer-photo-small {
-    width: 800px;
+    display: inline-block;
+    object-fit: contain;
+    height: 100%;
     min-height: 275px;
-    max-height: 275px;
-    object-fit: cover;
+    margin-right: auto;
   }
 
   &__designer-photo-large {
-    width: 100%;
-    max-width: 100%;
+    min-width: 1350px;
     min-height: 275px;
     max-height: 275px;
     object-fit: cover;
@@ -34,14 +36,15 @@
 
   &__info-center {
     width: 80%;
-    // margin: auto;
-    // @include center;
+    margin: -10.5rem auto;
+  }
+
+  &__heading-container {
   }
 
   &__info-container {
     font-weight: 500;
     margin-top: 3.5rem;
-    // background: green;
 
     div {
       margin-bottom: 2rem;
@@ -94,7 +97,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
   .hero {
     &__info-center {
     }

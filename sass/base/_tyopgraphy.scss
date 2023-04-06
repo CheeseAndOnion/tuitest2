@@ -3,36 +3,41 @@ body {
 }
 
 // Hero heading
-.hero__heading-container {
-  margin: 7rem 0 -3rem 0;
-  max-width: max-content;
+.test {
+  font-size: 5rem;
+}
 
-  .hero__heading {
-    width: max-content;
+.hero-header {
+  font-size: 5rem;
+  font-family: $font-castro;
+  font-weight: 400;
+  line-height: 5rem;
+  margin-top: -15.75rem;
+  margin-bottom: 4rem;
 
-    span {
-      font-weight: 400;
-      letter-spacing: -0.11em;
-      font-family: Castoro;
-      overflow: visible;
-      line-height: 5rem;
-    }
+  &__span-1 {
+    font-size: 2.25rem;
+    letter-spacing: -0.11em;
+  }
 
-    .hero__heading--span-1 {
-      display: block;
-    }
+  &__span-2 {
+    font-size: 1.75rem;
+    letter-spacing: -0.11em;
+    word-spacing: 0.11em;
+    margin-left: -0.2em;
+  }
 
-    .hero__heading--span-3,
-    .hero__heading--span-4 {
-      display: block;
-      // background: pink;
-      font-size: 4.6rem;
-      margin-top: -0.8rem;
-    }
+  &__span-3 {
+    font-size: 5.25rem;
+    display: block;
+    letter-spacing: -0.11em;
+    margin-top: -1rem;
+  }
 
-    .hero__heading--span-4 {
-      margin-bottom: 4.5rem;
-    }
+  &__span-4 {
+    font-size: 5.25rem;
+    display: block;
+    letter-spacing: -0.11em;
   }
 }
 
@@ -72,7 +77,6 @@ body {
 
 @media screen and (min-width: 800px) {
   .hero__heading-container {
-    margin: 8.75rem 0 -3rem 0;
     max-width: max-content;
   }
 
