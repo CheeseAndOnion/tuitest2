@@ -104,28 +104,35 @@ body {
     &__span-4 {
       font-size: 7.5rem;
     }
+  }
 
-    .about {
-      &__title {
-        font-size: 3rem;
-      }
-
-      &__sub-title {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 0.75rem;
-      }
-
-      &__paragraph {
-        font-size: 1.5rem;
-      }
+  .about {
+    &__title {
+      font-size: 3rem;
+      font-weight: 800;
     }
 
-    .experience p {
+    &__sub-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    &__paragraph {
       font-size: 1.5rem;
-      font-style: normal;
+      font-weight: 400;
     }
   }
+
+  .experience p {
+    font-size: 1.5rem;
+    font-style: normal;
+  }
+
+  // .about__title {
+  //   font-size: 3rem;
+  //   background: green;
+  // }
 
   .hero__introduction {
     font-size: 1.5rem;

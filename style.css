@@ -106,24 +106,26 @@ body {
       font-size: 7.5rem; }
     .hero-header__span-4 {
       font-size: 7.5rem; }
-    .hero-header .about__title {
-      font-size: 3rem; }
-    .hero-header .about__sub-title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 0.75rem; }
-    .hero-header .about__paragraph {
-      font-size: 1.5rem; }
-    .hero-header .experience p {
-      font-size: 1.5rem;
-      font-style: normal; }
+  .about__title {
+    font-size: 3rem;
+    font-weight: 800; }
+  .about__sub-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem; }
+  .about__paragraph {
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .experience p {
+    font-size: 1.5rem;
+    font-style: normal; }
   .hero__introduction {
     font-size: 1.5rem; } }
 
 .hero__center {
   position: relative;
   width: 80%;
-  margin: auto; }
+  margin: 0 auto 13rem auto; }
 
 .hero__designer-img-container {
   height: 280px;
@@ -181,12 +183,10 @@ body {
   margin-bottom: 2rem; }
 
 @media screen and (min-width: 800px) {
+  .hero__designer-photo-large {
+    display: inline-block; }
   .hero__designer-photo-small {
     display: none; }
-  .hero__designer-photo-large {
-    display: block; } }
-
-@media screen and (min-width: 800px) {
   .hero__center {
     margin-left: 20%; }
   .hero__info-container {
@@ -206,7 +206,7 @@ body {
     position: absolute;
     display: flex;
     top: 2.75rem;
-    right: 18%;
+    right: 5%;
     height: 66%; }
   .hero__introduction {
     margin-left: -7.5rem;
@@ -240,7 +240,8 @@ body {
     left: 0;
     font-size: 1rem; }
   .hero__dropdown-links a {
-    color: #5d2496; }
+    color: #5d2496;
+    letter-spacing: 4%; }
   .hero__social-link {
     font-size: 3rem; }
   .hero__social-icons {
@@ -248,17 +249,23 @@ body {
     text-align: right;
     top: 13.5rem;
     width: 100%;
-    right: 18%; }
+    right: 5%; }
   .hero__email-link {
     font-size: 1.85rem; }
   .hero .image-left-box {
     min-width: 20%; } }
 
+@media screen and (min-width: 950px) {
+  .hero__absolute-reposition {
+    right: 18%; }
+  .hero__social-icons {
+    right: 18%; } }
+
 .about__title-underline {
   height: 4px;
   width: 100%;
   background: #f8f6fe;
-  margin-bottom: 1rem; }
+  margin-bottom: 2.5rem; }
 
 .about-article {
   margin-bottom: 2.5rem; }
@@ -297,8 +304,7 @@ body {
   margin-bottom: 3rem; }
 
 .about__paragraph {
-  margin-bottom: 1.5rem;
-  line-height: 45px; }
+  margin-bottom: 1.5rem; }
 
 .experience__bullet-point {
   height: 1rem;
@@ -314,6 +320,12 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%); }
+
+.experience__location {
+  font-weight: 600; }
+
+.experience__country {
+  font-weight: 700; }
 
 @media screen and (min-width: 800px) {
   .experience {
@@ -342,7 +354,9 @@ body {
   .UX-skills-article:after {
     right: 50%;
     height: 120%;
-    width: 50%; } }
+    width: 50%; }
+  #about__resume {
+    margin-top: 5rem; } }
 
 .case-study {
   padding: 3rem 0; }
@@ -367,7 +381,7 @@ body {
 
 @media screen and (min-width: 800px) {
   .case-study {
-    padding: 5rem 0;
+    padding: 12rem 0;
     height: auto;
     display: flex;
     justify-content: space-between;

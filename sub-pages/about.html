@@ -17,36 +17,48 @@
   <body>
     <header class="hero">
       <div class="hero__designer-img-container">
+<div class="image-left-box"></div>
         <img
           src="../images/designer-img-small.png"
           alt="Image of UX designer Tui Lucking"
           class="hero__designer-photo-small"
         />
         <img
-          src="../images/designer-img-large.png"
+          src="../images/designer-img-large-alt.jpg"
           alt="Image of UX designer Tui Lucking"
           class="hero__designer-photo-large"
         />
+
       </div>
       <div class="hero__center">
-        <div class="hero__info-center">
-          <div class="hero__heading-container">
-            <h1 class="hero__heading">
-              <span class="span-test">
-                <span class="hero__heading--span-1"
-                  >Hello, <span id="span-test-2">I am</span></span
-                >
-              </span>
-              <span class="hero__heading--span-3">Tui</span>
-              <span class="hero__heading--span-4">Lucking</span>
-            </h1>
-          </div>
-
           <div class="hero__info-container">
-            <div class="hero__absolute-reposition">
+           
+              <h1 class="hero-header">
+              <span class="hero-header__span-1">Hello,</span>  
+              <span class="hero-header__span-2">I am</span>  
+              <span class="hero-header__span-3">Tui</span>  
+              <span class="hero-header__span-4">Lucking</span>  
+              </h1>
+               <div class="hero__absolute-reposition">
               <div class="hero__links-container">
-                <a href="#" class="hero__link">Who am I?</a>
-                <a href="#" class="hero__link">My portfolio</a>
+                
+                <div class="hero__dropdown-link-hover-area">
+                  <a href="../sub-pages/about.html" class="hero__link hero__link-hover">Who am I?</a>
+                   <ul class="hero__dropdown-links">
+                    <li>
+                    <a href="./sub-pages/about.html#about__work-ethic"
+                      >My work ethic</a
+                    ></li>
+                      <li>
+                                 <a href="../sub-pages/about.html#about__resume"
+                      >My Resume</a
+                    >
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+                <a href="../sub-pages/projects.html" class="hero__link hero__link-2">My portfolio</a>
+                  <!-- </div> -->
               </div>
 
               <div class="hero__social-icons">
@@ -92,7 +104,7 @@
 
     <main>
       <div class="section-center">
-        <section class="work-ethic about">
+        <section class="about">
           <h2 class="about__title" id="about__work-ethic">My work ethic</h2>
           <div class="about__title-underline"></div>
 
@@ -131,7 +143,7 @@
             </p>
 
             <img
-              src="/images/puffer-fish.png"
+              src="/images/puzzle pieces.png"
               alt="Jigsaw pieces apart (to represent not fitting) and together (to represent a good match)"
               class="about__img"
               id="jigsaw-image"
@@ -237,5 +249,6 @@
         </section>
       </div>
     </main>
+        <script src="../app.js"></script>
   </body>
 </html>

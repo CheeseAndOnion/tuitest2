@@ -2,7 +2,7 @@
   height: 4px;
   width: 100%;
   background: #f8f6fe;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .about-article {
@@ -61,7 +61,6 @@
 
 .about__paragraph {
   margin-bottom: 1.5rem;
-  line-height: 45px;
 }
 
 .experience__bullet-point {
@@ -79,6 +78,15 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.experience__location {
+  // color: red;
+  font-weight: 600;
+}
+
+.experience__country {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 800px) {
@@ -126,5 +134,9 @@
     right: 50%;
     height: 120%;
     width: 50%;
+  }
+
+  #about__resume {
+    margin-top: 5rem;
   }
 }
