@@ -41,6 +41,10 @@ body {
   }
 }
 
+.hero__introduction {
+  font-size: 1rem;
+}
+
 .about {
   &__title {
     font-size: 1.25rem;
@@ -80,24 +84,50 @@ body {
     max-width: max-content;
   }
 
-  .about {
-    &__title {
+  .hero-header {
+    line-height: 6.65rem;
+    margin-top: -15.75rem;
+    margin-bottom: 4rem;
+
+    &__span-1 {
+      font-size: 4rem;
+    }
+
+    &__span-2 {
       font-size: 3rem;
     }
 
-    &__sub-title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 0.75rem;
+    &__span-3 {
+      font-size: 7.5rem;
     }
 
-    &__paragraph {
+    &__span-4 {
+      font-size: 7.5rem;
+    }
+
+    .about {
+      &__title {
+        font-size: 3rem;
+      }
+
+      &__sub-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+      }
+
+      &__paragraph {
+        font-size: 1.5rem;
+      }
+    }
+
+    .experience p {
       font-size: 1.5rem;
+      font-style: normal;
     }
   }
 
-  .experience p {
+  .hero__introduction {
     font-size: 1.5rem;
-    font-style: normal;
   }
 }

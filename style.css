@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Darker+Grotesque:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Darker+Grotesque:wght@400;500;600;700;800;900&display=swap");
 *,
 *::after,
 *::before {
@@ -8,7 +8,6 @@
 
 html {
   box-sizing: border-box;
-  border: 2px solid red !important;
   font-size: 100%; }
 
 body {
@@ -67,6 +66,9 @@ body {
     display: block;
     letter-spacing: -0.11em; }
 
+.hero__introduction {
+  font-size: 1rem; }
+
 .about__title {
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -92,17 +94,31 @@ body {
 @media screen and (min-width: 800px) {
   .hero__heading-container {
     max-width: max-content; }
-  .about__title {
-    font-size: 3rem; }
-  .about__sub-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.75rem; }
-  .about__paragraph {
-    font-size: 1.5rem; }
-  .experience p {
-    font-size: 1.5rem;
-    font-style: normal; } }
+  .hero-header {
+    line-height: 6.65rem;
+    margin-top: -15.75rem;
+    margin-bottom: 4rem; }
+    .hero-header__span-1 {
+      font-size: 4rem; }
+    .hero-header__span-2 {
+      font-size: 3rem; }
+    .hero-header__span-3 {
+      font-size: 7.5rem; }
+    .hero-header__span-4 {
+      font-size: 7.5rem; }
+    .hero-header .about__title {
+      font-size: 3rem; }
+    .hero-header .about__sub-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem; }
+    .hero-header .about__paragraph {
+      font-size: 1.5rem; }
+    .hero-header .experience p {
+      font-size: 1.5rem;
+      font-style: normal; }
+  .hero__introduction {
+    font-size: 1.5rem; } }
 
 .hero__center {
   position: relative;
@@ -127,10 +143,8 @@ body {
   margin-right: auto; }
 
 .hero__designer-photo-large {
-  min-width: 1350px;
-  min-height: 275px;
-  max-height: 275px;
   object-fit: cover;
+  display: inline-block;
   display: none; }
 
 .hero__info-center {
@@ -166,16 +180,24 @@ body {
   margin-top: 4rem;
   margin-bottom: 2rem; }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
   .hero__designer-photo-small {
     display: none; }
   .hero__designer-photo-large {
     display: block; } }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
+  .hero__center {
+    margin-left: 20%; }
+  .hero__info-container {
+    margin-left: -7.5rem; }
+  .hero__info-center {
+    margin-left: 5rem; }
   .hero__link {
     display: inline;
-    border: none; }
+    border: none;
+    font-size: 1.375rem;
+    color: #5d2496; }
   .hero__link:not(:last-child) {
     margin-right: 3rem; }
   .hero__introduction {
@@ -183,40 +205,54 @@ body {
   .hero__absolute-reposition {
     position: absolute;
     display: flex;
-    top: 1rem;
-    right: 0%;
+    top: 2.75rem;
+    right: 18%;
     height: 66%; }
+  .hero__introduction {
+    margin-left: -7.5rem;
+    width: 26.5rem; }
   .hero__dropdown-link-hover-area {
     position: relative;
     height: 5rem; }
   .hero__link {
-    height: 1.5rem; }
-  .hero__link::after {
-    content: '';
-    position: absolute;
-    top: 2rem;
-    left: -0.75rem;
-    height: 1px;
-    width: 6rem;
-    background: #53168f;
-    z-index: -10; }
+    padding-bottom: 1rem;
+    height: 2rem;
+    font-weight: 600; }
   .hero__link::before {
     content: '';
     position: absolute;
     top: 2rem;
-    left: 7rem;
+    left: -0.5rem;
     height: 1px;
-    width: 7.5rem;
-    background: #53168f; }
-  .hero__dropdown-links {
+    width: 7rem;
+    background: #5d2496; }
+  .hero__link-2::before {
+    content: '';
     position: absolute;
     top: 2rem;
-    left: 0; }
+    left: 9rem;
+    height: 1px;
+    width: 8.75rem;
+    background: #5d2496; }
+  .hero__dropdown-links {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    font-size: 1rem; }
+  .hero__dropdown-links a {
+    color: #5d2496; }
+  .hero__social-link {
+    font-size: 3rem; }
   .hero__social-icons {
     position: absolute;
     text-align: right;
-    top: 10.5rem;
-    width: 100%; } }
+    top: 13.5rem;
+    width: 100%;
+    right: 18%; }
+  .hero__email-link {
+    font-size: 1.85rem; }
+  .hero .image-left-box {
+    min-width: 20%; } }
 
 .about__title-underline {
   height: 4px;
@@ -347,7 +383,7 @@ body {
   list-style-type: none; }
 
 .hero__dropdown-links li a {
-  font-weight: 700;
+  font-weight: 600;
+  text-decoration: none;
   font-size: 1rem;
-  text-transform: uppercase;
-  border-bottom: 2px solid #361855; }
+  text-transform: uppercase; }
