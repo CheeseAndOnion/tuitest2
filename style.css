@@ -38,9 +38,6 @@ section {
 body {
   color: #361855; }
 
-.test {
-  font-size: 5rem; }
-
 .hero-header {
   font-size: 5rem;
   font-family: Castoro;
@@ -145,6 +142,7 @@ body {
   margin-right: auto; }
 
 .hero__designer-photo-large {
+  min-width: 100%;
   object-fit: cover;
   display: inline-block;
   display: none; }
@@ -183,6 +181,8 @@ body {
   margin-bottom: 2rem; }
 
 @media screen and (min-width: 800px) {
+  html {
+    font-size: 80%; }
   .hero__designer-photo-large {
     display: inline-block; }
   .hero__designer-photo-small {
@@ -210,7 +210,7 @@ body {
     height: 66%; }
   .hero__introduction {
     margin-left: -7.5rem;
-    width: 26.5rem; }
+    width: 46rem; }
   .hero__dropdown-link-hover-area {
     position: relative;
     height: 5rem; }
@@ -243,15 +243,15 @@ body {
     color: #5d2496;
     letter-spacing: 4%; }
   .hero__social-link {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   .hero__social-icons {
     position: absolute;
     text-align: right;
-    top: 13.5rem;
+    top: 15.5rem;
     width: 100%;
     right: 5%; }
   .hero__email-link {
-    font-size: 1.85rem; }
+    font-size: 1.5rem; }
   .hero .image-left-box {
     min-width: 20%; } }
 

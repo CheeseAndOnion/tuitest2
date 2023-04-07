@@ -27,7 +27,7 @@
   }
 
   &__designer-photo-large {
-    // min-width: 1350px;
+    min-width: 100%;
     // min-height: 275px;
     // max-height: 275px;
     object-fit: cover;
@@ -89,6 +89,10 @@
 }
 
 @media screen and (min-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+
   .hero {
     &__designer-photo-large {
       display: inline-block;
@@ -135,7 +139,7 @@
 
     &__introduction {
       margin-left: -7.5rem;
-      width: 26.5rem;
+      width: 46rem;
     }
 
     &__dropdown-link-hover-area {
@@ -186,19 +190,19 @@
     }
 
     &__social-link {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     &__social-icons {
       position: absolute;
       text-align: right;
-      top: 13.5rem;
+      top: 15.5rem;
       width: 100%;
       right: 5%;
     }
 
     &__email-link {
-      font-size: 1.85rem;
+      font-size: 1.5rem;
     }
 
     .image-left-box {
